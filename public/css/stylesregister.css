@@ -1,0 +1,38 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de la tarjeta de formulario */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Título principal */
+.card h1 {
+    font-size: 2rem;
+}
+
+/* Botones */
+.btn-outline-secondary {
+    width: 48%;
+}
+
+.btn-primary {
+    width: 48%;
+}
+
+/* Espaciado entre los campos */
+.mb-3 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Formulario de entrada */
+.form-control,
+.form-select {
+    border-radius: 5px;
+    padding: 0.75rem;
+}
+

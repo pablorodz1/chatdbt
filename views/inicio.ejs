@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Noticias sobre Diabetes</title>
+    <!-- Agregar hoja CSS -->
+    <link rel="stylesheet" href="resources/css/stylesinit.css">
+    <!-- Agregar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff; padding: 10px 0;">
+    <div class="container">
+         <!-- Logo -->
+        <a href="/" class="navbar-brand">
+            <img src="https://www.diabeteslatam.org/web/image/534-7930fc81/Logo-Diabetes-Latam-02-1024x530.png" alt="Logo de Diabetes Latam" class="logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index" style="color: #000;">chatDBT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/nosotros" style="color: #000;">Sobre nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Sección de inicio con noticias sobre diabetes -->
+<section id="inicio" class="main-section">
+    <div class="container">
+        <h2 class="section-title">Últimas noticias sobre diabetes</h2>
+        
+        <!-- Carrusel de noticias -->
+        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primera noticia -->
+                <div class="carousel-item active">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/cnne-1387774-230502170931-obesity-diabetes-medication-health-wellness-052023.jpg?c=original" class="d-block w-100" alt="Noticia 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nuevo tratamiento para la diabetes tipo 2 promete avances</h5>
+                        <p>Investigadores han descubierto un tratamiento innovador para la diabetes tipo 2 que podría cambiar el enfoque de la medicina actual.</p>
+                    </div>
+                </div>
+                <!-- Segunda noticia -->
+                <div class="carousel-item">
+                    <img src="https://www.zacatecas.gob.mx/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-14-at-1.10.10-PM.jpeg" class="d-block w-100" alt="Noticia 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Avances en la detección temprana de la diabetes gestacional</h5>
+                        <p>Con nuevas técnicas de diagnóstico, se puede detectar la diabetes gestacional en sus primeras etapas, mejorando los resultados para las madres y bebés.</p>
+                    </div>
+                </div>
+                <!-- Tercera noticia -->
+                <div class="carousel-item">
+                    <img src="https://usil-blog.s3.amazonaws.com/PROD/blog/image/iStock-1366052585.jpg" class="d-block w-100" alt="Noticia 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Estudio muestra los beneficios de la actividad física para controlar la diabetes</h5>
+                        <p>Un reciente estudio demuestra que el ejercicio regular puede ayudar a controlar los niveles de azúcar en sangre, mejorando la calidad de vida de los pacientes.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Diabetes News. Todos los derechos reservados.</p>
+    <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+</footer>
+
+<!-- Agregar Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

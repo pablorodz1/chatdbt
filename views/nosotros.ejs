@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sobre Nosotros | Diabetes Latam</title>
+    <!-- Agregar hoja CSS -->
+    <link rel="stylesheet" href="resources/css/stylesNosotros.css">
+    <!-- Agregar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- Logo -->
+        <a href="/" class="navbar-brand">
+            <img src="https://www.diabeteslatam.org/web/image/534-7930fc81/Logo-Diabetes-Latam-02-1024x530.png" alt="Logo de Diabetes Latam" class="logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index">chatDBT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Sección de "Sobre Nosotros" -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="about-title">¿Quiénes Somos?</h2>
+        <p class="about-text">En Diabetes Latam, nos dedicamos a ofrecer información, herramientas y servicios enfocados en mejorar la calidad de vida de las personas con diabetes. Nuestra misión es proporcionar recursos accesibles y confiables que ayuden a las personas a tomar decisiones informadas sobre su salud y bienestar. Nuestro chatbot **ChatDBT** está diseñado para responder preguntas sobre diabetes y ofrecer orientación sobre cómo manejar la condición de manera efectiva.</p>
+        
+        <div class="mission-vision">
+            <h3>Misión</h3>
+            <p class="about-text">Nuestra misión es ofrecer apoyo y conocimientos para el manejo de la diabetes a través de tecnologías innovadoras, como nuestro chatbot **ChatDBT**. Nos esforzamos por empoderar a las personas con la información que necesitan para mejorar su bienestar y control de la diabetes.</p>
+
+            <h3>Visión</h3>
+            <p class="about-text">Ser la plataforma líder en América Latina en el ámbito de la educación sobre diabetes, ofreciendo soluciones accesibles y efectivas para las personas con diabetes en la región. Buscamos transformar la manera en que las personas gestionan su salud a través de la tecnología.</p>
+        </div>
+        
+        <!-- Mapa de la ubicación -->
+        <h3 class="text-center" style="color: #2980B9;">Nuestra Ubicación</h3>
+        <div id="map"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Diabetes Latam. Todos los derechos reservados.</p>
+    <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+    <p>Correo: <a href="mailto:diabeteslatams@company.com">diabeteslatams@company.com</a></p>
+</footer>
+
+<!-- Agregar Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- API de Google Maps -->
+<script>
+    function initMap() {
+        const location = { lat: 21.0030, lng: -99.2087 };  // Coordenadas de Tula de Allende, Zona Centro
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 14,
+            center: location,
+        });
+        const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "Diabetes Latam - Tulancingo, Hidalgo",
+        });
+    }
+</script>
+
+</body>
+</html>

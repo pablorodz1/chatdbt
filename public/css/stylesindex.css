@@ -1,0 +1,304 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Barra de navegación hamburguesa desapegable */
+header {
+    background-color: white; /* Azul vibrante */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.logo {
+    height: 50px; /* Tamaño del logotipo */
+    width: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #15d34e; /* Azul más oscuro */
+    border-radius: 5px;
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container .logo {
+    height: 80px;
+}
+
+/* Estilos de la lista de navegación */
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #68e4de00;
+}
+
+/* Estilos de la barra hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+/* Responsividad: Hacer el menú vertical en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-link {
+        text-align: center;
+        width: 100%;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    /* Mostrar el icono de hamburguesa */
+    .menu-toggle {
+        display: flex;
+    }
+}
+/* Estilos del contenido principal */
+#main-content {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+#chat {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#chatbox {
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-link {
+    color: #2980B9;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo general para los enlaces */
+.a-login, .a-logout {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de la sección principal */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-title {
+    color: #2C3E50;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    margin-top: 10px;
+    text-align: center;
+}
+/* Botón de iniciar sesión en azul */
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2980B9; /* Azul */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #1B6A8A; /* Azul oscuro al pasar el cursor */
+}
+
+/* Botón de cerrar sesión en rojo */
+.logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E74C3C; /* Rojo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #C0392B; /* Rojo oscuro al pasar el cursor */
+}
+.intro-text {
+    font-size: 1.2rem;
+    color: #34495E;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chat-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.chat-title {
+    font-size: 2rem;
+    color: #16A085;
+    margin-bottom: 20px;
+}
+
+.chatbox {
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+}
+
+.chatbot-frame {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Estilos para el estado de conexión */
+.user-info h5 {
+    color: #27AE60;
+    font-size: 1.2rem;
+}
+
